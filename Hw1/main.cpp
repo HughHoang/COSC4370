@@ -15,11 +15,11 @@ int main() {
       //starting arc
       bmpNew.set_pixel(x+xspacing/2, yupper+yspacing/2+minor, 255, 255, 255, 0);
       //mirrors it to the bottom left
-      bmpNew.set_pixel(x+xspacing/2, -yupper+yspacing/2+minor, 255, 255, 255, 0);
+      //bmpNew.set_pixel(x+xspacing/2, -yupper+yspacing/2+minor, 255, 255, 255, 0);
       //mirrors it to the top right
       bmpNew.set_pixel(-x+xspacing/2+2*major, yupper+yspacing/2+minor, 255, 255, 255, 0);
       //mirrors it to the bottom right
-      bmpNew.set_pixel(-x+xspacing/2+2*major, -yupper+yspacing/2+minor, 255, 255, 255, 0);
+      //bmpNew.set_pixel(-x+xspacing/2+2*major, -yupper+yspacing/2+minor, 255, 255, 255, 0);
       //std::cout<<"x:"<<x<<std::endl;
       //std::cout<<"yu:"<<yupper<<std::endl;
     }
@@ -29,12 +29,12 @@ int main() {
       //calculates upper part of ellipse
       int xupper=2*sqrt(y*(-y+major));
       //starting arc
-      bmpNew.set_pixel(xupper+xspacing/2+major, y+yspacing/2, 255, 255, 255, 0);
+      //bmpNew.set_pixel(xupper+xspacing/2+major, y+yspacing/2, 255, 255, 255, 0);
       //mirrors it to the bottom left
-      bmpNew.set_pixel(-xupper+xspacing/2+major, y+yspacing/2, 255, 255, 255, 0);
+      //bmpNew.set_pixel(-xupper+xspacing/2+major, y+yspacing/2, 255, 255, 255, 0);
       //mirrors it to the top right
       bmpNew.set_pixel(xupper+xspacing/2+major, -y+yspacing/2+2*minor, 255, 255, 255, 0);
-      //mirrors it to the bottom right
+      //mirrors it to the top left
       bmpNew.set_pixel(-xupper+xspacing/2+major, -y+yspacing/2+2*minor, 255, 255, 255, 0);
       //std::cout<<"y:"<<y<<std::endl;
       //std::cout<<"xu:"<<xupper<<std::endl;
