@@ -3,8 +3,11 @@
 #include <cmath>
 
 int main() {
+  //width screen dimension is 2000, height screen dimension is 1000, major axis/x center point is 768, minor/y center point is 384
   int dimx=2000,dimy=1000,major=768,minor=384;
+  //create screen with dimensions
   BMP bmpNew(dimx,dimy,false);
+  //spacing between edges of ellipse and screen border
   int xspacing=dimx-2*major;
   int yspacing=dimy-2*minor;
   //graphs x=equation
